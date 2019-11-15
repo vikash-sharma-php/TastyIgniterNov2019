@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'system_name' => 'TastyIgniter',
-    'system_powered' => '<a target="_blank" href="http://tastyigniter.com">Powered by TastyIgniter</a>',
-    'copyright' => 'Thank you for using <a target="_blank" href="http://tastyigniter.com">TastyIgniter</a>',
+    'system_name' => 'Dosa North & South Indian Restaurant',
+    'system_powered' => '<a target="_blank" href="https://demo.softprodigyphp.in/RestaurantDosaQA/">Powered by Dosa Restaurant</a>',
+    'copyright' => 'Thank you for using <a target="_blank" href="https://demo.softprodigyphp.in/RestaurantDosaQA/">Dosa Restaurant</a>',
     'version' => '<b>Version:</b> %s',
 
     'no_database' => [
