@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => 'TastyIgniter',
+    'name' => 'Dosa North & South Indian Restaurant',
 
     /*
     |--------------------------------------------------------------------------
@@ -104,7 +104,7 @@ return [
     |
     */
 
-    'key' => 'CHANGE!!!!!!!!!!!!!!!!!!!!!!!!!',
+    'key' => 'base64:c/feGdnr566/ICxd3UCsRkxA0gqk5f/zW458pCS+5oo=',
 
     'cipher' => 'AES-256-CBC',
 
