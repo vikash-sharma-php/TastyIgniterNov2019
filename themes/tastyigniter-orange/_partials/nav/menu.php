@@ -1,3 +1,14 @@
+<script type="text/javascript">
+  document.addEventListener('scroll',function(){
+    if($(this).scrollTop()==0){      
+      if($('.header-bottom').hasClass('custom-class')) 
+        $('.header-bottom').removeClass("custom-class")
+    }else{
+      if(!$('.header-bottom').hasClass('custom-class')) 
+        $('.header-bottom').addClass("custom-class")
+    }
+  })
+</script>
 <!--start-home-->
 <div class="banner" id="home">
     <div class="header-bottom wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s">
@@ -9,7 +20,7 @@
                         <nav class="link-effect-4" id="link-effect-4">
                           <ul>
                              <li class="active"><a data-hover="Home" href="<?= page_url('home'); ?>"><?= sprintf(lang('main::lang.menu_home'))?></a></li>
-                            <li><a data-hover="About" href="#about" class="scroll"><?= sprintf(lang('main::lang.menu_about'))?></a></li>
+                            <li><a data-hover="Menu" href="#about" class="scroll"><?= sprintf(lang('main::lang.menu_about'))?></a></li>
                             <li><a data-hover="Services" href="#services" class="scroll"><?= sprintf(lang('main::lang.local.text_tab_services'))?></a></li>
                             <li><a data-hover="Chefs" href="#team" class="scroll"><?= sprintf(lang('main::lang.local.text_tab_chefs'))?></a></li>
                             <!-- <li><a data-hover="Reservation" href="#reservation" class="scroll">REservation</a></li> -->

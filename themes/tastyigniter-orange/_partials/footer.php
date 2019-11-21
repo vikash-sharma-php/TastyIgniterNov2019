@@ -35,11 +35,11 @@
                     <h6 class="footer-title d-none d-sm-block"><?= setting('site_name'); ?></h6>
                     <ul>
                         <?php if (!is_single_location()) { ?>
-                            <li>
+                            <!-- <li>
                                 <a href="<?= site_url('locations'); ?>">
                                     <?= lang('main::lang.menu_locations'); ?>
                                 </a>
-                            </li>
+                            </li> -->
                         <?php } ?>
                         <li>
                             <a href="<?= site_url('contact'); ?>">
@@ -59,7 +59,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <!-- <div class="col-sm-3">
                 <div class="footer-links">
                     <h6 class="footer-title d-none d-sm-block"><?= lang('main::lang.text_information'); ?></h6>
                     <ul>
@@ -74,14 +74,14 @@
                         <?php } ?>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-sm-3 mt-3 mt-sm-0">
+            <!-- <div class="col-sm-3 mt-3 mt-sm-0">
                 <div class="social-bottom">
                     <h6 class="footer-title"><?= lang('main::lang.text_follow_us'); ?></h6>
                     <?= partial('social_icons', ['socialIcons' => $this->theme->social]); ?>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

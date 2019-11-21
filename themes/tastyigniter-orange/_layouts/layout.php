@@ -47,7 +47,9 @@ function onEnd()
 
     <footer class="footer pt-4">
         <div class="footer-top">
-            <?= component('newsletter'); ?>
+            <?php
+            // component('newsletter'); 
+            ?>
         </div>
         
         <div class="footer-bottom">

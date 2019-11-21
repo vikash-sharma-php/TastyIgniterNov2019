@@ -29,7 +29,7 @@ return [
     'menu_locations' => 'Our Locations',
     'menu_contact' => 'Contact Us',
     'menu_admin' => 'Administrator',
-    'menu_about' => 'About',
+    'menu_about' => 'Menu',
 
     'alert_success' => '%s successfully.',
     'alert_error' => 'An error occurred, %s.',
