@@ -320,6 +320,7 @@ return [
         'label_site_currency' => 'Default Currency',
         'label_accepted_currency' => 'Accepted Currency',
         'label_detect_language' => 'Detect Browser Language',
+        'label_wifi_password' => 'Wi-Fi Password',
         'label_site_language' => 'Default Language',
         'label_customer_group' => 'Customer Group',
         'label_site_location_mode' => 'Location Mode',
