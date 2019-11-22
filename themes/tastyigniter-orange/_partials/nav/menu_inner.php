@@ -109,6 +109,6 @@
     </div>
     </div>
    
-    <div class="down"><a class="scroll" href="#services"><img src=<?= '"'.assets_url(); ?>/vd-theme/images/down.png" alt=""></a>
-    </div>
+    <!-- <div class="down"><a class="scroll" href="#services"><img src=<?= '"'.assets_url(); ?>/vd-theme/images/down.png" alt=""></a>
+    </div> -->
 </div>
