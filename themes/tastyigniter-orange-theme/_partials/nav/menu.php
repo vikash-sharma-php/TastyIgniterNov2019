@@ -66,6 +66,7 @@
 
                             <a
                                 class="dropdown-item"
+                                href="javascript:void(0)"
                                 data-request="session::onLogout"
                             ><?= lang('main::lang.menu_logout'); ?></a>
                         </div>

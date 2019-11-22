@@ -56,6 +56,7 @@
     <?php } ?>
     <a
         data-request="session::onLogout"
+        href="javascript:void(0)"
         class="nav-item nav-link text-danger"
     ><span class="fa fa-ban"></span>&nbsp;&nbsp;&nbsp;<?= lang('igniter.user::default.text_logout'); ?>
     </a>
