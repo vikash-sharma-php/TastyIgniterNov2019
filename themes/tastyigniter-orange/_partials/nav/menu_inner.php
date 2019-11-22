@@ -72,6 +72,7 @@
 
                             <a
                                 class="dropdown-item"
+                                href="javascript:void(0)"
                                 data-request="session::onLogout"
                             ><?= lang('main::lang.menu_logout'); ?></a>
                         </div>
@@ -109,6 +110,6 @@
     </div>
     </div>
    
-    <div class="down"><a class="scroll" href="#services"><img src=<?= '"'.assets_url(); ?>/vd-theme/images/down.png" alt=""></a>
-    </div>
+    <!-- <div class="down"><a class="scroll" href="#services"><img src=<?= '"'.assets_url(); ?>/vd-theme/images/down.png" alt=""></a>
+    </div> -->
 </div>
