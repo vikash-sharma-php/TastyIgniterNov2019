@@ -91,9 +91,9 @@
                 value="1"
                 class="custom-control-input" <?= set_checkbox('newsletter', '1'); ?>
             >
-            <label class="custom-control-label" for="newsletter">
+            <!-- <label class="custom-control-label" for="newsletter">
                 <?= lang('igniter.user::default.login.label_newsletter'); ?>
-            </label>
+            </label> -->
         </div>
         <?= form_error('newsletter', '<span class="text-danger">', '</span>'); ?>
     </div>
