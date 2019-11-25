@@ -82,7 +82,7 @@ return [
     'label_hide_min_order_amount' => 'Hide Min. Order Amount',
     'label_lang' => 'Language Line',
     'label_status' => 'Status',
-    'label_search_query' => 'Enter your address/postcode to order',
+    'label_search_query' => 'Enter your address/postcode to orders',
     'label_redirect' => 'Page to redirect to when no location is selected',
     'label_menu_page' => 'Menus Page',
     'label_show_local_image' => 'Show Location Thumb',
