@@ -8,7 +8,7 @@ return [
     'text_plus' => '+ ',
     'text_minutes' => 'minutes',
     'text_min' => 'min',
-    'text_my_account' => 'My Account',
+    'text_my_account' => 'Quick Links',
     'text_information' => 'Information',
     'text_follow_us' => 'Follow us on:',
 
