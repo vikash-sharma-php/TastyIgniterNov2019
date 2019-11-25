@@ -46,6 +46,17 @@ return [
     'text_send_to_custom' => 'Specific email address',
     'text_send_to_staff_group' => 'Staff Group',
 
+    'label_first_name' => 'First Name',
+    'label_last_name' => 'Last Name',
+    'label_email' => 'Email Address',
+    'label_password' => 'New Password',
+    'label_password_confirm' => 'New Password Confirm',
+    'label_old_password' => 'Old Password',
+    'label_telephone' => 'Telephone',
+    'label_s_question' => 'Security Question',
+    'label_s_answer' => 'Security Answer',
+    'label_newsletter' => 'Keep me up-to-date with offers by email.',
+
     'login' => [
         'label_password' => 'Password',
         'label_password_confirm' => 'Password Confirm',
