@@ -75,7 +75,7 @@
 
     <div class="form-group">
         <label><?= lang('igniter.user::default.account.label_country'); ?></label>
-        <select name="address[country]" class="form-control">
+        <select name="address[country_id]" class="form-control">
             <?php foreach (countries() as $key => $value) { ?>
                 <option
                     value="<?= $key; ?>"
@@ -83,7 +83,7 @@
                 ><?= $value; ?></option>
             <?php } ?>
         </select>
-        <?= form_error('address.country', '<span class="text-danger">', '</span>'); ?>
+        <?= form_error('address.country_id', '<span class="text-danger">', '</span>'); ?>
     </div>
 
     <div class="buttons">
