@@ -1,14 +1,3 @@
-<script type="text/javascript">
-  document.addEventListener('scroll',function(){
-    if($(this).scrollTop()==0){      
-      if($('.header-bottom').hasClass('custom-class')) 
-        $('.header-bottom').removeClass("custom-class")
-    }else{
-      if(!$('.header-bottom').hasClass('custom-class')) 
-        $('.header-bottom').addClass("custom-class")
-    }
-  })
-</script>
 <!--start-home-->
 <div class="banner inner_pages" id="home">
     <div class="header-bottom wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s">
