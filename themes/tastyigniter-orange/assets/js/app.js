@@ -6144,6 +6144,7 @@ function($) {
                 })
                 if (this.handler === 'accountAddressBook::onSubmit')
                     location.reload();
+                    
                 return updatePromise
             },
             error: function(jqXHR, textStatus, errorThrown) {
