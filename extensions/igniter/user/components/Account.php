@@ -279,13 +279,15 @@ class Account extends \System\Classes\BaseComponent
                 ['newsletter', 'lang:igniter.user::default.login.label_subscribe', 'integer'],
             ];
 
+            $messages = ['required_with'=>'Old Password field is required'];
+
             $this->validateAfter(function ($validator) {
                 if ($message = $this->passwordDoesNotMatch()) {
                     $validator->errors()->add('old_password', $message);
                 }
             });
 
-            $this->validate($data, $rules);
+            $this->validate($data, $rules, $messages);
 
             $passwordChanged = FALSE;
             if (strlen(post('old_password')) AND strlen(post('new_password'))) {
