@@ -7,7 +7,7 @@ permalink: /checkout/success/:hash?
 ---
 <div class="container">
     <div class="row py-4">
-        <div class="col-6 m-auto">
+        <div class="col-12 m-auto">
             <div class="card">
                 <div class="card-body">
                     <?= partial('checkout::success'); ?>
