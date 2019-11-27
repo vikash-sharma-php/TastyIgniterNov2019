@@ -210,7 +210,7 @@ class Account extends \System\Classes\BaseComponent
                 ['email', 'lang:igniter.user::default.settings.label_email', 'required|email|unique:customers,email'],
                 ['password', 'lang:igniter.user::default.login.label_password', 'required|min:6|max:32|same:password_confirm'],
                 ['password_confirm', 'lang:igniter.user::default.login.label_password_confirm', 'required'],
-                ['telephone', 'lang:igniter.user::default.settings.label_telephone', 'required|digits_between:10,20'],
+                ['telephone', 'lang:igniter.user::default.settings.label_telephone', 'required|numeric|digits_between:10,20'],
                 ['newsletter', 'lang:igniter.user::default.login.label_subscribe', 'integer'],
             ];
 
