@@ -13245,7 +13245,10 @@ a.close.disabled {
     color: #ed561a; }
 
 body > main {
-  padding-top: 55px; margin:0 !important}
+  padding-top: 55px;
+  margin:0 !important;
+  min-height: 500px;
+  }
 
 .the-intro {
   min-height: 100vh; }
