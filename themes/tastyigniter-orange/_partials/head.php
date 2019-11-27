@@ -7,7 +7,8 @@
 else { ?>
     <?= get_favicon(); ?>
 <?php } ?>
-<title><?= sprintf(lang('main::lang.site_title'), lang(get_title()), setting('site_name')); ?></title>
+<title><?= sprintf(lang(get_title()), setting('site_name')); ?></title>
+<!--title><?= sprintf(lang('main::lang.site_title'), lang(get_title()), setting('site_name')); ?></title-->
 <?= get_style_tags(); ?>
 <?= '<link rel="stylesheet" type="text/css" href="'.theme_url().'/tastyigniter-orange/assets/css/app.css"'.'>'; ?>
 <?= '<link rel="stylesheet" type="text/css" href="'.assets_url().'/vd-theme/css/animate.css"'.'>'; ?>

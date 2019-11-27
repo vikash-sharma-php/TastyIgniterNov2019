@@ -391,8 +391,8 @@ function onEnd() {
 	                    <?= component('contact'); ?>
 				</div>
 				<div class="col-md-6 contact-in wow fadeInUp"  data-wow-duration="1s" data-wow-delay=".5s">
-						<h4 class="info"><?= sprintf(lang('main::lang.contact.our_info'))?> </h4>
-						<p class="para1"><?= sprintf(lang('main::lang.contact.info_text'))?>  </p>
+						<!--h4 class="info"><?= sprintf(lang('main::lang.contact.our_info'))?> </h4>
+						<p class="para1"><?= sprintf(lang('main::lang.contact.info_text'))?>  </p-->
 						 <?php if ($contactLocation = $contact->location) { ?>
 						        <div class="con-top">
 						            <h4><?= $contactLocation->getName(); ?></h4>
