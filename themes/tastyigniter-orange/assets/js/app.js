@@ -10551,4 +10551,18 @@ $(function() {
             'margin-bottom': $('.footer').outerHeight() + 10 + 'px'
         });
     })
-})
+});
+
+$(document).ready(function(){
+        $('.delete_btn_address').on('click',function(){
+            var id = $(this).attr('data-id'); 
+            $('#deleteModal').modal('show');          
+            $('.popup_ok_delete').attr('data-id',id);
+            $('#delete_address_id').val(id);
+        });
+        
+        $('.popup_cancel_delete').click(function(){            
+            $('#deleteModal').modal('hide');            
+        });
+                
+});
