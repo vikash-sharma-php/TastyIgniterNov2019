@@ -6123,7 +6123,8 @@ function($) {
             headers: {
                 'X-IGNITER-REQUEST-HANDLER': handler,
             },
-            success: function(data, textStatus, jqXHR) {
+            success: function (data, textStatus, jqXHR) {
+                $('#cookingLoader').hide();
                 // Stop beforeUpdate() OR data-request-before-update returns false
                 if (this.options.beforeUpdate.apply(this, [data, textStatus, jqXHR]) === false) return
                 if (options.fireBeforeUpdate && eval('(function($el, context, data, textStatus, jqXHR) {' +
@@ -6139,7 +6140,6 @@ function($) {
 
                 updatePromise.done(function() {
                     $triggerEl.trigger('ajaxSuccess', [context, data, textStatus, jqXHR])
-                  $('#cookingLoader').hide();
                     options.fireSuccess && eval('(function($el, context, data, textStatus, jqXHR) {' + options.fireSuccess + '}.call($el.get(0), $el, context, data, textStatus, jqXHR))')
                 })
                 
@@ -6149,6 +6149,7 @@ function($) {
                 return updatePromise
             },
             error: function(jqXHR, textStatus, errorThrown) {
+                $('#cookingLoader').hide();
                 var errorMsg,
                     updatePromise = $.Deferred()
 
@@ -6182,6 +6183,7 @@ function($) {
 
             },
             complete: function(data, textStatus, jqXHR) {
+                $('#cookingLoader').hide();
                 $triggerEl.trigger('ajaxComplete', [context, data, textStatus, jqXHR])
                 options.fireComplete && eval('(function($el, context, data, textStatus, jqXHR) {' + options.fireComplete + '}.call($el.get(0), $el, context, data, textStatus, jqXHR))')
             },
