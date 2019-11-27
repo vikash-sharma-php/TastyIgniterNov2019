@@ -209,17 +209,15 @@ class Account extends \System\Classes\BaseComponent
                 ['last_name', 'lang:igniter.user::default.settings.label_last_name', 'required|min:2|max:32|regex:/^(?!\s*$)[A-Z-a-z]+$/i'],
                 ['email', 'lang:igniter.user::default.settings.label_email', 'required|email|unique:customers,email'],
                 ['password', 'lang:igniter.user::default.login.label_password', 'required|min:6|max:32|same:password_confirm'],
-                ['password_confirm', 'lang:igniter.user::default.login.label_password_confirm', 'required'],
-                ['telephone', 'lang:igniter.user::default.settings.label_telephone', 'required|numeric|digits_between:10,20'],
+                ['password_confirm', 'lang:igniter.user::default.login.label_password_confirm', 'required'], 
+                ['telephone', 'lang:igniter.user::default.settings.label_telephone', 'required|regex:/^[0-9]+$/|digits_between:10,20'],               
                 ['newsletter', 'lang:igniter.user::default.login.label_subscribe', 'integer'],
             ];
-
-            $messages = ['numeric' => 'Please enter numeric digits'];
 
             if (is_numeric($this->property('registrationTerms')))
                 $rules[] = ['terms', 'lang:igniter.user::default.login.label_i_agree', 'required|integer'];
 
-            $this->validate($data, $rules, $messages);
+            $this->validate($data, $rules);
 
             Event::fire('igniter.user.beforeRegister', [&$data]);
 
