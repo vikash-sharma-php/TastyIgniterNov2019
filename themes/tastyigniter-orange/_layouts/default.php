@@ -30,7 +30,7 @@ function onEnd()
 <body class="<?= $this->page->bodyClass; ?> default_home">
 
     <div id="cookingLoader" style="display:none">
-        <h1 class="loaderHq">Cooking in progress..</h1>
+        <!--h1 class="loaderHq">Cooking in progress..</h1 -->
         <div id="cooking">
             <div class="bubble"></div>
             <div class="bubble"></div>
