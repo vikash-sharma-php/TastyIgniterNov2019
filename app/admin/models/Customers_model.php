@@ -158,7 +158,7 @@ class Customers_model extends AuthUserModel
      *
      * @return string Reset code
      */
-    public function resetPassword()
+    public function resetPassword() 
     {
         if (!$this->enabled())
             return FALSE;
@@ -229,5 +229,9 @@ class Customers_model extends AuthUserModel
         }
 
         return $query;
+    }
+
+    public function completeResetPassword($code, $password){
+        die("hiop");
     }
 }

@@ -121,6 +121,7 @@ return [
         'alert_reset_request_success' => 'Password reset request successfully, please check your email on how to proceed.',
         'alert_reset_error' => 'Password reset unsuccessful, email not found or incorrect details entered.',
         'alert_reset_failed' => 'Password reset failed, reset code is either invalid or expired.',
+        'alert_reset_disabled_error' => 'Password reset failed, user account disabled.',
         'alert_activation_failed' => 'Account activation failed, please try again.',
         'alert_no_email_match' => 'No matching email address',
     ],

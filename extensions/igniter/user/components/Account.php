@@ -272,12 +272,14 @@ class Account extends \System\Classes\BaseComponent
             $rules = [
                 ['first_name', 'lang:igniter.user::default.label_first_name', 'required|min:2|max:32|regex:/^(?!\s*$)[A-Z-a-z]+$/i'],
                 ['last_name', 'lang:igniter.user::default.label_last_name', 'required|min:2|max:32|regex:/^(?!\s*$)[A-Z-a-z]+$/i'],
-                ['old_password', 'lang:igniter.user::default.label_email', 'sometimes'],
+                ['old_password', 'lang:igniter.user::default.label_email', 'required_with:new_password'],
                 ['new_password', 'lang:igniter.user::default.label_password', 'required_with:old_password|min:6|max:32|same:confirm_new_password'],
                 ['confirm_new_password', 'lang:igniter.user::default.label_password_confirm', 'required_with:old_password'],
                 ['telephone', 'lang:igniter.user::default.label_telephone', 'required|digits_between:10,20'],
                 ['newsletter', 'lang:igniter.user::default.login.label_subscribe', 'integer'],
             ];
+
+            $messages = ['required_with'=>'Old Password field is required'];
 
             $this->validateAfter(function ($validator) {
                 if ($message = $this->passwordDoesNotMatch()) {
@@ -285,7 +287,7 @@ class Account extends \System\Classes\BaseComponent
                 }
             });
 
-            $this->validate($data, $rules);
+            $this->validate($data, $rules, $messages);
 
             $passwordChanged = FALSE;
             if (strlen(post('old_password')) AND strlen(post('new_password'))) {
