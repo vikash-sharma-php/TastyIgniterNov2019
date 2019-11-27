@@ -214,10 +214,12 @@ class Account extends \System\Classes\BaseComponent
                 ['newsletter', 'lang:igniter.user::default.login.label_subscribe', 'integer'],
             ];
 
+            $messages = ['numeric' => 'Please enter numeric digits'];
+
             if (is_numeric($this->property('registrationTerms')))
                 $rules[] = ['terms', 'lang:igniter.user::default.login.label_i_agree', 'required|integer'];
 
-            $this->validate($data, $rules);
+            $this->validate($data, $rules, $messages);
 
             Event::fire('igniter.user.beforeRegister', [&$data]);
 
