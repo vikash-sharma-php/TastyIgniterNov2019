@@ -8,14 +8,14 @@ return [
     'text_plus' => '+ ',
     'text_minutes' => 'minutes',
     'text_min' => 'min',
-    'text_my_account' => 'My Account',
+    'text_my_account' => 'Quick Links',
     'text_information' => 'Information',
     'text_follow_us' => 'Follow us on:',
 
     'text_maintenance_enabled' => 'Maintenance Enabled',
 
     'menu_home' => 'Home',
-    'menu_menu' => 'View Menu',
+    'menu_menu' => 'Order Online',
     'menu_reservation' => 'Reservation',
     'menu_login' => 'Login',
     'menu_logout' => 'Logout',
@@ -29,7 +29,8 @@ return [
     'menu_locations' => 'Our Locations',
     'menu_contact' => 'Contact Us',
     'menu_admin' => 'Administrator',
-    'menu_about' => 'Menu',
+    'menu_about' => 'Order Online',
+    'menu' => 'Menu',
 
     'alert_success' => '%s successfully.',
     'alert_error' => 'An error occurred, %s.',
@@ -273,9 +274,9 @@ return [
         'view_our_menu_text' => 'Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.',
         'reservation' => 'Reservation',
         'reservation_text' => 'Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.',
-        'fine_recipes' => 'Fine Recipes',
+        'fine_recipes' => 'Party Caterings',
         'fine_recipes_text' => 'Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.',
-        'spicy_recipes' => 'Spicy Recipes',
+        'spicy_recipes' => 'Corporate Events',
         'spicy_recipes_text' => 'Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.',
     ],
 

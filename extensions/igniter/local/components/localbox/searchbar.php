@@ -4,7 +4,7 @@
     role="form"
     data-request="<?= $searchEventHandler; ?>"
 >
-    <div class="input-group">
+    <!-- <div class="input-group">
         <input
             type="text"
             id="search-query"
@@ -20,5 +20,5 @@
                 data-control="search-local"
             ><?= lang('igniter.local::default.button_search_location'); ?></button>
         </div>
-    </div>
+    </div> -->
 </form>

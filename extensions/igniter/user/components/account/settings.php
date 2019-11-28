@@ -59,7 +59,7 @@
         </div>
     </div>
 
-    <div class="form-row">
+    <!-- <div class="form-row">
         <div class="col">
                     <span class="button-checkbox">
                         <button
@@ -82,7 +82,7 @@
             </label>
         </div>
         <?= form_error('newsletter', '<span class="text-danger">', '</span>'); ?>
-    </div>
+    </div> -->
 
     <div class="my-4">
         <h4><?= lang('igniter.user::default.settings.text_password_heading'); ?></h4>

@@ -25,7 +25,7 @@
                     <td><?= $reservation->status->status_name; ?></td>
                     <td><?= $reservation->location ? $reservation->location->location_name : null; ?></td>
                     <td><?= $reservation->reserve_time; ?> - <?= day_elapsed($reservation->reserve_date); ?></td>
-                    <td><?= $reservation->related_table ? $reservation->related_table->table_name : null; ?></td>
+                    <td><?= $reservation->table_name; ?></td>
                     <td><?= $reservation->guest_num; ?></td>
                     <td>
                         <a

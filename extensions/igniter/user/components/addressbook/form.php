@@ -10,7 +10,7 @@
         value="<?= set_value('address[address_id]', $address->address_id); ?>"
     />
     <div class="form-group">
-        <label><?= lang('igniter.user::default.account.label_address_1'); ?></label>
+        <label><?= lang('igniter.user::default.account.label_address_1'); ?> *</label>
         <input
             type="text"
             name="address[address_1]"
@@ -34,7 +34,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-4 col-md-4">
             <div class="form-group">
-                <label><?= lang('igniter.user::default.account.label_city'); ?></label>
+                <label><?= lang('igniter.user::default.account.label_city'); ?> *</label>
                 <input
                     type="text"
                     class="form-control"
@@ -75,7 +75,7 @@
 
     <div class="form-group">
         <label><?= lang('igniter.user::default.account.label_country'); ?></label>
-        <select name="address[country]" class="form-control">
+        <select name="address[country_id]" class="form-control">
             <?php foreach (countries() as $key => $value) { ?>
                 <option
                     value="<?= $key; ?>"
@@ -83,7 +83,7 @@
                 ><?= $value; ?></option>
             <?php } ?>
         </select>
-        <?= form_error('address.country', '<span class="text-danger">', '</span>'); ?>
+        <?= form_error('address.country_id', '<span class="text-danger">', '</span>'); ?>
     </div>
 
     <div class="buttons">
@@ -94,6 +94,6 @@
         <button
             type="submit"
             class="btn btn-primary btn-lg"
-        ><?= lang('igniter.user::default.account.button_update'); ?></button>
+        ><?= ($address->address_1)?lang('igniter.user::default.account.button_update'): lang('igniter.user::default.account.button_add'); ?></button>
     </div>
 </form>
