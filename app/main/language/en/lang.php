@@ -274,9 +274,9 @@ return [
         'view_our_menu_text' => 'Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.',
         'reservation' => 'Reservation',
         'reservation_text' => 'Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.',
-        'fine_recipes' => 'Fine Recipes',
+        'fine_recipes' => 'Party Caterings',
         'fine_recipes_text' => 'Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.',
-        'spicy_recipes' => 'Spicy Recipes',
+        'spicy_recipes' => 'Corporate Events',
         'spicy_recipes_text' => 'Lorem ipsum Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit.',
     ],
 
