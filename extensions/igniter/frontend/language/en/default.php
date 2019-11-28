@@ -20,7 +20,7 @@ return [
         'column_dimension' => 'Dimension (W x H)',
         'column_layout_partial' => 'Layout - Partial Area',
         'column_status' => 'Status',
-        'column_id' => 'ID',
+        'column_id' => 'Order ID',
 
         'label_banner' => 'Banner',
         'label_dimension' => 'Dimension (W x H)',
