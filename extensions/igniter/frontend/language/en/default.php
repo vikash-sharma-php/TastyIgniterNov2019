@@ -56,10 +56,10 @@ return [
         'text_comment' => 'Comment',
         'text_technical_issues' => 'Technical Issues',
 
-        'label_subject' => 'Enquiry Subject:',
-        'label_full_name' => 'Full Name:',
-        'label_email' => 'Email Address:',
-        'label_telephone' => 'Telephone:',
+        'label_subject' => 'Enquiry Subject',
+        'label_full_name' => 'Full Name',
+        'label_email' => 'Email Address',
+        'label_telephone' => 'Telephone',
         'label_comment' => 'Comment',
 
         'button_send' => 'SEND',

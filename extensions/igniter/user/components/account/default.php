@@ -1,6 +1,7 @@
 <?php
 $customerOrders = $__SELF__->getCustomerOrders();
 $customerReservations = $__SELF__->getCustomerReservations();
+$settings = $__SELF__->getWifiPassword();
 ?>
 <div class="row">
     <div class="col-md-6">
@@ -43,7 +44,7 @@ $customerReservations = $__SELF__->getCustomerReservations();
     </div>
 </div>
 <div class="row">
-    <span style="color: #fff;text-decoration: none;background-color: #ed561a;margin-left: 25px;">Wifi Password : 123456</span>    
+    <span style="color: #fff;text-decoration: none;background-color: #ed561a;margin-left: 25px;">Wifi Password : <?= $settings['value']; ?></span>    
 </div>
 <div class="row mt-3">
     <div class="col">
