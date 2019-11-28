@@ -193,7 +193,7 @@ return [
         'text_leave_review' => 'Leave review',
         'text_no_payment' => 'No Payment',
 
-        'column_id' => 'ID',
+        'column_id' => 'Order ID',
         'column_status' => 'Status',
         'column_delivery' => 'Delivery',
         'column_payment' => 'Payment',
