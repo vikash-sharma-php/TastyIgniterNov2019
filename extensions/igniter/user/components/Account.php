@@ -152,7 +152,8 @@ class Account extends \System\Classes\BaseComponent
     {
         $settings = Settings_model::select('value')
                            ->where('item', 'wifi_password')
-                           ->get();
+                           ->first()
+                           ->toArray();                           
         return $settings;
     }
 

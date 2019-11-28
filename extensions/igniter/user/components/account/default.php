@@ -3,7 +3,6 @@ $customerOrders = $__SELF__->getCustomerOrders();
 $customerReservations = $__SELF__->getCustomerReservations();
 $settings = $__SELF__->getWifiPassword();
 ?>
-<input type="hidden" name="wifi" value="<?php echo '<pre>';print_r($settings['value']);echo '</pre>';?>"> 
 <div class="row">
     <div class="col-md-6">
         <div class="card">
