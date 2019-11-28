@@ -15,7 +15,7 @@ return [
     'text_maintenance_enabled' => 'Maintenance Enabled',
 
     'menu_home' => 'Home',
-    'menu_menu' => 'View Menu',
+    'menu_menu' => 'Order Online',
     'menu_reservation' => 'Reservation',
     'menu_login' => 'Login',
     'menu_logout' => 'Logout',
@@ -29,7 +29,8 @@ return [
     'menu_locations' => 'Our Locations',
     'menu_contact' => 'Contact Us',
     'menu_admin' => 'Administrator',
-    'menu_about' => 'Menu',
+    'menu_about' => 'Order Online',
+    'menu' => 'Menu',
 
     'alert_success' => '%s successfully.',
     'alert_error' => 'An error occurred, %s.',

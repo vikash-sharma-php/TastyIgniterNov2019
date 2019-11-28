@@ -9,7 +9,11 @@
                     <nav class="link-effect-41" id="link-effect-41">
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= restaurant_url('local/menus'); ?>" class="<?= ($this->page->getId() == 'local-menus') ? 'active' : ''; ?>"><?= lang('main::lang.menu_menu'); ?></a>
+                                <a class="nav-link" href="<?= restaurant_url('local/menus'); ?>" class="<?= ($this->page->getId() == 'local-menus') ? 'active' : ''; ?>"><?= lang('main::lang.menu_about'); ?></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= assets_url('/media/menu/menu.pdf'); ?>" target="_blank"><?= lang('main::lang.menu'); ?></a>
                             </li>
 
                             <li class="nav-item">
