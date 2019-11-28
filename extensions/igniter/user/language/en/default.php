@@ -78,6 +78,7 @@ return [
         'alert_logout_success' => 'You have been logged out successfully.',
         'alert_expired_login' => 'Session expired, please login',
         'alert_invalid_login' => 'Username and password not found!',
+        'alert_disabled_user_login' => 'Account disabled !',
         'alert_account_created' => 'Account created successfully, login below!',
         'alert_account_activation' => 'An activation email has been sent to your email address.',
         'alert_registration_disabled' => 'Registration is currently disabled by the site administrator.',

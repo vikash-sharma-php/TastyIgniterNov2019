@@ -50,7 +50,7 @@ return [
         'text_heading' => 'Contact',
         'text_summary' => 'Feel free to send a message',
         'text_find_us' => 'Find Us On Map',
-        'text_select_subject' => 'Select a subject',
+        'text_select_subject' => 'Subject',
         'text_contact_us' => 'Contact Us',
         'text_general_enquiry' => 'General enquiry',
         'text_comment' => 'Comment',
