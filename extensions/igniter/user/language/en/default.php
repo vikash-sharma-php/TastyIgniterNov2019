@@ -17,6 +17,7 @@ return [
     'text_order' => 'ORDER NOW',
     'text_checkout' => 'CHECKOUT NOW',
     'text_edit' => 'EDIT',
+    'text_delete' => 'DELETE',
     'text_default_address' => 'My Default Address',
     'text_no_default_address' => 'You don\'t have a default address',
     'text_no_orders' => 'There are no orders available to show.',
@@ -112,6 +113,7 @@ return [
 
         'alert_updated_success' => 'Address added/updated successfully.',
         'alert_deleted_success' => 'Address deleted successfully.',
+        'alert_deleted_error' => 'Address deleted failed.',
     ],
     'reset' => [
         'component_title' => 'Password Reset Component',

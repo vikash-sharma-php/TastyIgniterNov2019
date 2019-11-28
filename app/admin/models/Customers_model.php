@@ -158,7 +158,7 @@ class Customers_model extends AuthUserModel
      *
      * @return string Reset code
      */
-    public function resetPassword()
+    public function resetPassword() 
     {
         if (!$this->enabled())
             return FALSE;

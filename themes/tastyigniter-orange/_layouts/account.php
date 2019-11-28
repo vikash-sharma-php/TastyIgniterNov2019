@@ -11,7 +11,7 @@ description: Account layout
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<?= App::getLocale(); ?>">
 <head>
-    <?= partial('head'); ?>
+    <?= partial('head'); ?>    
 </head>
 <body class="<?= $this->page->bodyClass; ?> inner_pages">
 

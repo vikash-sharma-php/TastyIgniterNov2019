@@ -209,8 +209,8 @@ class Account extends \System\Classes\BaseComponent
                 ['last_name', 'lang:igniter.user::default.settings.label_last_name', 'required|min:2|max:32|regex:/^(?!\s*$)[A-Z-a-z]+$/i'],
                 ['email', 'lang:igniter.user::default.settings.label_email', 'required|email|unique:customers,email'],
                 ['password', 'lang:igniter.user::default.login.label_password', 'required|min:6|max:32|same:password_confirm'],
-                ['password_confirm', 'lang:igniter.user::default.login.label_password_confirm', 'required'],
-                ['telephone', 'lang:igniter.user::default.settings.label_telephone', 'required|digits_between:10,20'],
+                ['password_confirm', 'lang:igniter.user::default.login.label_password_confirm', 'required'], 
+                ['telephone', 'lang:igniter.user::default.settings.label_telephone', 'required|regex:/^[0-9]+$/|digits_between:10,20'],               
                 ['newsletter', 'lang:igniter.user::default.login.label_subscribe', 'integer'],
             ];
 

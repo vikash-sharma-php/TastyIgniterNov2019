@@ -108,7 +108,7 @@
                     value="1"
                     class="custom-control-input" <?= set_checkbox('terms', '1'); ?>
                 >
-                <label class="custom-control-label" for="agree-terms">
+                <label class="custom-control-label" for="agree-terms" style="font-weight:unset;">
                     <?= sprintf(lang('igniter.user::default.login.label_terms'), $account->getRegistrationTermsUrl()); ?>
                 </label>
             </div>
