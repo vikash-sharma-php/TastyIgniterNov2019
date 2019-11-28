@@ -31,7 +31,8 @@
 </p>
 <span class="h5"><?= lang('igniter.cart::default.checkout.text_your_local'); ?></span><br />
 <p>
-    <strong><?= $order->location->location_name; ?></strong><br />
+    <strong>Dosa North & South Indian Restaurant</strong><br />
+    <!--strong><?= $order->location->location_name; ?></strong><br /-->
     <address><?= format_address($order->location->getAddress()); ?></address>
 </p>
 
