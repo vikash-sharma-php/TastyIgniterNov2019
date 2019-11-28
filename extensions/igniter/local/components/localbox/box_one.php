@@ -3,8 +3,7 @@
          src="<?= $locationCurrent->getThumb(['width' => $localThumbWidth, 'height' => $localThumbHeight]); ?>">
 <?php } ?>
 <dl <?= $showLocalThumb ? 'class="box-image"' : ''; ?>>
-    <dd><h1 class="h4">Dosa North & South Indian Restaurant</h1></dd>
-    <!--dd><h1 class="h4"><?= $locationCurrent->getName(); ?></h1></dd-->
+    <dd><h1 class="h4"><?= $locationCurrent->getName(); ?></h1></dd>
     <?php if (setting('allow_reviews', 1)) { ?>
         <dd class="text-muted">
             <div class="rating rating-sm">
