@@ -162,7 +162,7 @@ function onEnd() {
 	</div>
 <!--end-service-section-->
 <!--start-team-section-->
-	<div class="team-section" id="team">
+	<!-- <div class="team-section" id="team">
 	 	  <div class="container">
 		  <h3 class="tittle"><?= sprintf(lang('main::lang.chefs.our_chefs'))?></h3>
 		  <div class="arrows-serve"><img src=<?= '"'.assets_url(); ?>/vd-theme/images/border.png" alt="border"></div>
@@ -225,7 +225,7 @@ function onEnd() {
 				<div class="clearfix"></div>
 			</div>
 		  </div>
-	</div>
+	</div> -->
 <!--end-team-section-->
 <!--start-gallery-section-->
 	<div class="gallery" id="gallery">
