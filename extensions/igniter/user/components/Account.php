@@ -184,12 +184,19 @@ class Account extends \System\Classes\BaseComponent
             $credentials = [
                 'email' => post('email'),
                 'password' => post('password'),
+                'status'   => 1
             ];
 
             Event::fire('igniter.user.beforeAuthenticate', [$this, $credentials]);
-
-            if (!Auth::authenticate($credentials, $remember, TRUE))
-                throw new ApplicationException(lang('igniter.user::default.login.alert_invalid_login'));
+            $resp = Auth::authenticate($credentials, $remember, TRUE);
+            if (!Auth::authenticate($credentials, $remember, TRUE)){
+                if(!$user = Customers_model::where('email',post('email'))->first())
+                    throw new ApplicationException(lang('igniter.user::default.login.alert_invalid_login'));
+                else if(!\Hash::check(post('password'), $user->password))
+                    throw new ApplicationException(lang('igniter.user::default.login.alert_invalid_login'));
+                else if($user->status == 0)
+                    throw new ApplicationException(lang('igniter.user::default.login.alert_disabled_user_login'));
+            }
 
             Event::fire('igniter.user.login', [$this]);
 
