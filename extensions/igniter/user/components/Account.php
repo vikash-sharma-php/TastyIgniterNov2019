@@ -292,7 +292,7 @@ class Account extends \System\Classes\BaseComponent
                 ['old_password', 'lang:igniter.user::default.label_email', 'required_with:new_password'],
                 ['new_password', 'lang:igniter.user::default.label_password', 'required_with:old_password|min:6|max:32|same:confirm_new_password'],
                 ['confirm_new_password', 'lang:igniter.user::default.label_password_confirm', 'required_with:old_password'],
-                ['telephone', 'lang:igniter.user::default.label_telephone', 'required|digits_between:10,20'],
+                ['telephone', 'lang:igniter.user::default.label_telephone', 'required||regex:/^[0-9]+$/|digits_between:10,20'],
                 ['newsletter', 'lang:igniter.user::default.login.label_subscribe', 'integer'],
             ];
 
