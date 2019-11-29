@@ -49,20 +49,22 @@ function onEnd()
 				<div class="grid">
 					<div class="h-f wow slideInLeft" data-wow-duration="1s" data-wow-delay=".2s">
 						<figure class="effect-jazz">
-							<img src=<?= '"' . assets_url(); ?>/vd-theme/images/s1.jpg" alt="img25" />
+							<img src=<?= '"' . assets_url(); ?>/vd-theme/images/s4.jpg" alt="img25" />
 							<figcaption>
-								<h4><?= sprintf(lang('main::lang.home.honest')) ?> <span><?= sprintf(lang('main::lang.home.food')) ?></span></h4>
-								<p><?= sprintf(lang('main::lang.home.section_data')) ?></p>
+								<h4>Masala <span>Dosa</span></h4>
+								<!--h4><?= sprintf(lang('main::lang.home.honest')) ?> <span><?= sprintf(lang('main::lang.home.food')) ?></span></h4>
+								<p><?= sprintf(lang('main::lang.home.section_data')) ?></p-->
 							</figcaption>
 						</figure>
 
 					</div>
 					<div class="h-f wow slideInLeft" data-wow-duration="1s" data-wow-delay=".2s">
 						<figure class="effect-jazz">
-							<img src=<?= '"' . assets_url(); ?>/vd-theme/images/s2.jpg" alt="img25" />
+							<img src=<?= '"' . assets_url(); ?>/vd-theme/images/2.jpg" alt="img25" />
 							<figcaption>
-								<h4><?= sprintf(lang('main::lang.home.honest')) ?> <span><?= sprintf(lang('main::lang.home.food')) ?></span></h4>
-								<p><?= sprintf(lang('main::lang.home.section_data')) ?></p>
+								<h4>Fish <span>Curry</span></h4>
+								<!--h4><?= sprintf(lang('main::lang.home.honest')) ?> <span><?= sprintf(lang('main::lang.home.food')) ?></span></h4>
+								<p><?= sprintf(lang('main::lang.home.section_data')) ?></p-->
 							</figcaption>
 						</figure>
 
@@ -97,10 +99,11 @@ function onEnd()
 				<div class="grid">
 					<div class="h-f  wow slideInRight" data-wow-duration="1s" data-wow-delay=".2s">
 						<figure class="effect-jazz">
-							<img src=<?= '"' . assets_url(); ?>/vd-theme/images/s4.jpg" alt="img25" />
+							<img src=<?= '"' . assets_url(); ?>/vd-theme/images/s1.jpg" alt="img25" />
 							<figcaption>
-								<h4><?= sprintf(lang('main::lang.home.honest')) ?> <span><?= sprintf(lang('main::lang.home.food')) ?></span></h4>
-								<p><?= sprintf(lang('main::lang.home.section_data')) ?></p>
+								<h4>Chicken <span>Pakora</span></h4>
+								<!--h4><?= sprintf(lang('main::lang.home.honest')) ?> <span><?= sprintf(lang('main::lang.home.food')) ?></span></h4>
+								<p><?= sprintf(lang('main::lang.home.section_data')) ?></p-->
 							</figcaption>
 						</figure>
 
@@ -109,8 +112,9 @@ function onEnd()
 						<figure class="effect-jazz">
 							<img src=<?= '"' . assets_url(); ?>/vd-theme/images/s3.jpg" alt="img25" />
 							<figcaption>
-								<h4><?= sprintf(lang('main::lang.home.honest')) ?> <span><?= sprintf(lang('main::lang.home.food')) ?></span></h4>
-								<p><?= sprintf(lang('main::lang.home.section_data')) ?></p>
+								<h4>Vegetable <span>Biryani</span></h4>
+								<!--h4><?= sprintf(lang('main::lang.home.honest')) ?> <span><?= sprintf(lang('main::lang.home.food')) ?></span></h4>
+								<p><?= sprintf(lang('main::lang.home.section_data')) ?></p-->
 							</figcaption>
 						</figure>
 
@@ -243,9 +247,9 @@ function onEnd()
 						<div class="gal-text-box">
 							<div class="info-gal-con">
 								<h4><?= sprintf(lang('main::lang.gallery.first_image_title')) ?></h4>
-								<span class="separator"></span>
+								<!--span class="separator"></span>
 								<p><?= sprintf(lang('main::lang.gallery.first_image_text')) ?></p>
-								<span class="separator"></span>
+								<span class="separator"></span-->
 
 							</div>
 						</div>
@@ -259,9 +263,9 @@ function onEnd()
 						<div class="gal-text-box">
 							<div class="info-gal-con">
 								<h4><?= sprintf(lang('main::lang.gallery.second_image_title')) ?></h4>
-								<span class="separator"></span>
+								<!--span class="separator"></span>
 								<p><?= sprintf(lang('main::lang.gallery.second_image_text')) ?></p>
-								<span class="separator"></span>
+								<span class="separator"></span-->
 
 							</div>
 						</div>
@@ -275,9 +279,9 @@ function onEnd()
 						<div class="gal-text-box">
 							<div class="info-gal-con">
 								<h4><?= sprintf(lang('main::lang.gallery.third_image_title')) ?></h4>
-								<span class="separator"></span>
+								<!--span class="separator"></span>
 								<p><?= sprintf(lang('main::lang.gallery.third_image_text')) ?></p>
-								<span class="separator"></span>
+								<span class="separator"></span-->
 
 							</div>
 						</div>
@@ -291,9 +295,9 @@ function onEnd()
 						<div class="gal-text-box">
 							<div class="info-gal-con">
 								<h4><?= sprintf(lang('main::lang.gallery.fourth_image_title')) ?></h4>
-								<span class="separator"></span>
+								<!--span class="separator"></span>
 								<p><?= sprintf(lang('main::lang.gallery.fourth_image_text')) ?></p>
-								<span class="separator"></span>
+								<span class="separator"></span-->
 
 							</div>
 						</div>
@@ -307,9 +311,9 @@ function onEnd()
 						<div class="gal-text-box">
 							<div class="info-gal-con">
 								<h4><?= sprintf(lang('main::lang.gallery.fifth_image_title')) ?></h4>
-								<span class="separator"></span>
+								<!--span class="separator"></span>
 								<p><?= sprintf(lang('main::lang.gallery.fifth_image_text')) ?></p>
-								<span class="separator"></span>
+								<span class="separator"></span-->
 
 							</div>
 						</div>
@@ -323,9 +327,9 @@ function onEnd()
 						<div class="gal-text-box">
 							<div class="info-gal-con">
 								<h4><?= sprintf(lang('main::lang.gallery.sixth_image_title')) ?></h4>
-								<span class="separator"></span>
+								<!--span class="separator"></span>
 								<p><?= sprintf(lang('main::lang.gallery.sixth_image_text')) ?></p>
-								<span class="separator"></span>
+								<span class="separator"></span-->
 
 							</div>
 						</div>
@@ -339,9 +343,9 @@ function onEnd()
 						<div class="gal-text-box">
 							<div class="info-gal-con">
 								<h4><?= sprintf(lang('main::lang.gallery.seventh_image_title')) ?></h4>
-								<span class="separator"></span>
+								<!--span class="separator"></span>
 								<p><?= sprintf(lang('main::lang.gallery.seventh_image_text')) ?></p>
-								<span class="separator"></span>
+								<span class="separator"></span-->
 
 							</div>
 						</div>
@@ -355,9 +359,9 @@ function onEnd()
 						<div class="gal-text-box">
 							<div class="info-gal-con">
 								<h4><?= sprintf(lang('main::lang.gallery.eighth_image_title')) ?></h4>
-								<span class="separator"></span>
+								<!--span class="separator"></span>
 								<p><?= sprintf(lang('main::lang.gallery.eighth_image_text')) ?></p>
-								<span class="separator"></span>
+								<span class="separator"></span-->
 
 							</div>
 						</div>
@@ -375,7 +379,7 @@ function onEnd()
 		<div class="bottom-top">
 			<h3 class=" wow flipInX" data-wow-duration="1s" data-wow-delay=".3s"><?= sprintf(lang('main::lang.contact.we_are_sharing')) ?></h3>
 			<span><?= sprintf(lang('main::lang.contact.delicious_treats')) ?></span>
-			<p class="wow slideInDown" data-wow-duration="1s" data-wow-delay=".5s"><?= sprintf(lang('main::lang.contact.contact_us_text')) ?></p>
+			<!--p class="wow slideInDown" data-wow-duration="1s" data-wow-delay=".5s"><?= sprintf(lang('main::lang.contact.contact_us_text')) ?></p-->
 			<div class="start wow flipInX" data-wow-duration="1s" data-wow-delay=".3s">
 				<a href="<?= site_url('contact'); ?>" class="hvr-bounce-to-bottom"><?= lang('main::lang.menu_contact'); ?></a>
 			</div>
