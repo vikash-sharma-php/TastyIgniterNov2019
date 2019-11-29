@@ -1185,18 +1185,22 @@ h3.title,h2.title.review {
 .bottom-top{
   text-align:center;
   padding-top:8em;
+  position:relative;
 }
+
 .bottom-top h3 {
     color:#EFA52C;
     font-size: 3.5em;
     font-weight:bold;
 }
+
 .bottom-top p {
     font-size: 1em;
     color: #fff;
     line-height: 1.9em;
     margin: 1em auto;
     width: 61%;
+	
 }
 a.read.two {
     padding: 0.7em 2em;
