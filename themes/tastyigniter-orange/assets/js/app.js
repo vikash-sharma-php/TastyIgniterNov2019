@@ -6279,6 +6279,10 @@ function($) {
             return;
         }
 
+        if (window.location.pathname.split('/').pop() !== "menus")
+            $(window).ajaxStart(() => $('#cookingLoader').show());
+        $(window).ajaxStop(() => $('#cookingLoader').hide());
+
         $(window).trigger('ajaxBeforeSend', [context])
         $el.trigger('ajaxPromise', [context])
         return $.ajax(requestOptions)
