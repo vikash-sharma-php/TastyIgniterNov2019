@@ -354,7 +354,7 @@ class Booking extends BaseComponent
     {
         $startDate = strlen(input('date'))
             ? Carbon::createFromFormat('Y-m-d H:i', input('date').' '.input('time'))
-            : Carbon::tomorrow();
+            : Carbon::today();
 
         $dateTime = ($sdateTime = input('sdateTime'))
             ? Carbon::createFromFormat('Y-m-d H:i', $sdateTime)
