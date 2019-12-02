@@ -115,22 +115,24 @@ class LocalBox extends \System\Classes\BaseComponent
     public function deliveryConditionText()
     {
         $summary = [];
-        foreach ($this->location->getDeliveryChargeConditions() as $condition) {
-            if (empty($condition['amount'])) {
-                $condition['amount'] = lang('igniter.local::default.text_free');
-            }
-            else if ($condition['amount'] < 0) {
-                $condition['amount'] = lang('igniter.local::default.text_delivery_not_available');
-            }
-            else {
-                $condition['amount'] = currency_format($condition['amount']);
-            }
+        if(!empty($this->location->getDeliveryChargeConditions())){
+            foreach ($this->location->getDeliveryChargeConditions() as $condition) {
+                if (empty($condition['amount'])) {
+                    $condition['amount'] = lang('igniter.local::default.text_free');
+                }
+                else if ($condition['amount'] < 0) {
+                    $condition['amount'] = lang('igniter.local::default.text_delivery_not_available');
+                }
+                else {
+                    $condition['amount'] = currency_format($condition['amount']);
+                }
 
-            $condition['total'] = !empty($condition['total'])
-                ? currency_format($condition['total'])
-                : lang('igniter.local::default.text_delivery_all_orders');
+                $condition['total'] = !empty($condition['total'])
+                    ? currency_format($condition['total'])
+                    : lang('igniter.local::default.text_delivery_all_orders');
 
-            $summary[] = ucfirst(strtolower(parse_values($condition, $condition['label'])));
+                $summary[] = ucfirst(strtolower(parse_values($condition, $condition['label'])));
+            }
         }
 
         return implode(', ', $summary);
