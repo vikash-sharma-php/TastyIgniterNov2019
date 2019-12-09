@@ -303,7 +303,7 @@ class Booking extends BaseComponent
                     ['first_name', 'lang:igniter.reservation::default.label_first_name', 'required|min:2|max:32'],
                     ['last_name', 'lang:igniter.reservation::default.label_last_name', 'required|min:2|max:32'],
                     ['email', 'lang:igniter.reservation::default.label_email', 'required|email'],
-                    ['telephone', 'lang:igniter.reservation::default.label_telephone', 'required'],
+                    ['telephone', 'lang:igniter.reservation::default.label_telephone', 'required|regex:/^[0-9]+$/|digits_between:10,20'],
                     ['comment', 'lang:igniter.reservation::default.label_comment', 'max:520'],
                 ];
         }
@@ -354,7 +354,7 @@ class Booking extends BaseComponent
     {
         $startDate = strlen(input('date'))
             ? Carbon::createFromFormat('Y-m-d H:i', input('date').' '.input('time'))
-            : Carbon::tomorrow();
+            : Carbon::today();
 
         $dateTime = ($sdateTime = input('sdateTime'))
             ? Carbon::createFromFormat('Y-m-d H:i', $sdateTime)

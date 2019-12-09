@@ -130,7 +130,7 @@ return [
         'text_delivery_address' => 'Your Delivery Address',
         'text_your_local' => 'Your local restaurant',
         'text_thank_you' => 'We hope to see you again soon',
-        'text_success_message' => 'Your order has been received and will be with you shortly. <br /><a href="%s">Click here</a> to view your order progress.',
+        'text_success_message' => 'Your order has been received and will be with you shortly. <br />',
         'text_order_info' => 'This is a %s order. <br /><br /><b>Order Date:</b> %s <br /><b>%s Time:</b> %s <br /><b>Payment Method:</b> %s ',
         'text_order_total' => 'Order Total: <b>%s.</b>',
         'text_collection_order_type' => 'This is a pick-up order',
@@ -211,6 +211,6 @@ return [
         'button_reorder' => 'Re-Order',
         'button_back' => 'Back',
 
-        'alert_reorder_success' => 'You have successfully added the menus from order ID %s to your order.',
+        'alert_reorder_success' => 'You have successfully added the items from order ID %s to your order.',
     ],
 ];

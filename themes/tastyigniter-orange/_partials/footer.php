@@ -5,28 +5,23 @@
                 <div class="footer-links">
                     <h6 class="footer-title d-none d-sm-block"><?= lang('main::lang.text_my_account'); ?></h6>
                     <ul>
-                      <?php if (Auth::isLogged()) { ?>
-                        <li><a href="<?= page_url('account/account'); ?>"
-                                class="dropdown-item <?= ($this->page->getId() == 'account-account') ? 'active' : ''; ?>"
-                            ><?= lang('main::lang.menu_my_account'); ?></a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item"
-                                href="javascript:void(0)"
-                                data-request="session::onLogout"
-                            ><?= lang('main::lang.menu_logout'); ?></a>
-                        </li>
-                    <?php } else { ?>
-                        <li>
-                            <a href="<?= site_url('account/login'); ?>">
-                                <?= lang('main::lang.menu_login'); ?>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?= site_url('account/register'); ?>">
-                                <?= lang('main::lang.menu_register'); ?>
-                            </a>
-                        </li>
+                        <?php if (Auth::isLogged()) { ?>
+                            <li><a href="<?= page_url('account/account'); ?>" class="dropdown-item <?= ($this->page->getId() == 'account-account') ? 'active' : ''; ?>"><?= lang('main::lang.menu_my_account'); ?></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:void(0)" data-request="session::onLogout"><?= lang('main::lang.menu_logout'); ?></a>
+                            </li>
+                        <?php } else { ?>
+                            <li>
+                                <a href="<?= site_url('account/login'); ?>">
+                                    <?= lang('main::lang.menu_login'); ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?= site_url('account/register'); ?>">
+                                    <?= lang('main::lang.menu_register'); ?>
+                                </a>
+                            </li>
                         <?php } ?>
                     </ul>
                 </div>
@@ -47,8 +42,9 @@
                                 <?= lang('main::lang.menu_contact'); ?>
                             </a>
                         </li>
-                        <?php //if ($this->theme->hide_admin_link != 1) { ?>
-                           <!--  <li>
+                        <?php //if ($this->theme->hide_admin_link != 1) { 
+                        ?>
+                        <!--  <li>
                                 <a
                                     target="_blank"
                                     href="<?= admin_url(); ?>"
@@ -56,7 +52,8 @@
                                     <?= lang('main::lang.menu_admin'); ?>
                                 </a>
                             </li> -->
-                        <?php// } ?>
+                        <? php // } 
+                        ?>
                     </ul>
                 </div>
             </div>
@@ -77,12 +74,21 @@
                 </div>
             </div> -->
 
-            <!-- <div class="col-sm-3 mt-3 mt-sm-0">
+            <div class="col-sm-3 mt-3 mt-sm-0">
                 <div class="social-bottom">
                     <h6 class="footer-title"><?= lang('main::lang.text_follow_us'); ?></h6>
-                    <?= partial('social_icons', ['socialIcons' => $this->theme->social]); ?>
+                    <ul class="social-icons list-inline">
+                        <li>
+                            <a class="p-2 fab fa-facebook" target="_blank" title="facebook" href="https://www.facebook.com/dosarestaurant/">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="p-2 fab fa-instagram" target="_blank" title="instagram" href="https://www.instagram.com/dosa.restaurant/?hl=nl">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 </div>
@@ -98,8 +104,8 @@
 <div class="bottom-footer py-2">
     <div class="container">
         <div class="row">
-            <div class="col p-2">                 
-                <?php echo sprintf(lang('main::lang.site_copyright')).' '. date('Y').' Dosa North & South Indian Restaurant'; ?>
+            <div class="col p-2">
+                <?php echo sprintf(lang('main::lang.site_copyright')) . ' ' . date('Y') . ' Dosa North & South Indian Restaurant'; ?>
             </div>
         </div>
     </div>
